@@ -20,10 +20,10 @@ class Automato:
 def maquina_automato(arquivo_json):
 
     with open(arquivo_json, 'r') as arquivo:
-        descricao_automato = json.load(arquivo)
-        estado_inicial = descricao_automato['initial']
-        estado_final = descricao_automato['final']
-        transicoes = {(int(t['from']), t['read']): int(t['to']) for t in descricao_automato['transitions']}
+        descricao = json.load(arquivo)
+        estado_inicial = descricao['initial']
+        estado_final = descricao['final']
+        transicoes = {(int(t['from']), t['read']): int(t['to']) for t in descricao['transitions']}
 
     return Automato(estado_inicial, estado_final, transicoes)
 
@@ -46,3 +46,5 @@ def verificar_automato(automato, csv_entrada, csv_saida):
 def main():
     automato = maquina_automato('ex.aut.json')
     verificar_automato(automato, 'ex1_input.in.csv', 'ex1.out.csv')
+
+main()
