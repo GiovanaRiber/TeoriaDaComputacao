@@ -1,0 +1,8 @@
+S -> aAa | bBv
+A -> aA | a
+
+S -> aAa
+A -> aA | a
+
+S -> aAa
+A -> aA | a
