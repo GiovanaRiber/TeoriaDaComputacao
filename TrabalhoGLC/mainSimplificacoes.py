@@ -5,12 +5,12 @@ def lerGramatica(arquivo):
     
     with open(arquivo, 'r') as f:
         for l in f:
-            l= l.strip()  # Remove espaços em branco no início e no fim
+            l= l.strip()  # remove espaços em branco no início e no fim
             
             if '->' in l:
-                variaveis, terminais = map(str.strip, l.split('->'))  # Divide a linha e remove espaços
-                terminais = [a.strip() for a in terminais.split('|')]  # Divide os terminais e remove espaços
-                gramatica.setdefault(variaveis, []).extend(terminais)  # Adiciona os terminais à lista da variável
+                variaveis, terminais = map(str.strip, l.split('->'))  # divide a linha e remove espaços
+                terminais = [a.strip() for a in terminais.split('|')]  # divide os terminais e remove espaços
+                gramatica.setdefault(variaveis, []).extend(terminais)  # adiciona os terminais à lista da variável
     return gramatica
 
 def escreverGramatica(gramatica, arquivo):
