@@ -100,4 +100,4 @@ Y4 -> a
 A -> Y4 | Y5A
 Y5 -> a
 ```
-Ps: o algoritmo implementendado não fuiciona para todas as gramáticas de entrada.
+Ps: o algoritmo implementendado não funciona para todas as gramáticas de entrada.
