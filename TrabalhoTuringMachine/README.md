@@ -42,11 +42,11 @@ Componentes das instruções:
 ---
 Essas instruções serão utilizadas para ler a palavra contida em uma arquivo.txt:
 
-```python
+```
 aaabbb
 ```
 A saída esperada é:
 
-```python
+```
 AAABBB_
 ```
