@@ -23,9 +23,8 @@ def simulacao(instrucoes_arquivo, entrada_arquivo, saida_arquivo):
 
         chave = (estado_atual, simbolo_lido) # chave para verificar se há uma transição correspondente para o estado atual e o símbolo lido
         
-        if chave not in dicionario_transicoes:  # caso uma transição ñ esteja no dicionário, o loop é finalizado
-            print("Fita:", ''.join(fita))
-            print(0) # para fita rejeitada
+        if chave not in dicionario_transicoes:    # caso uma transição ñ esteja no dicionário, o loop é finalizado
+            print(f"Fita: {''.join(fita)}\n{0}")  # para fita rejeitada
             return
 
         transicao = dicionario_transicoes[chave]
