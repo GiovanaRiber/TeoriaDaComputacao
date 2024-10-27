@@ -12,9 +12,9 @@ Uma Máquina de Turing é composta por três componentes principais:
 
 1. `Fita:` A fita é uma sequência "infinita" de células, cada uma contendo um símbolo de um alfabeto finito (ex: `a`, `b`, e um símbolo em branco `_`).
 
-2. `Gravação:` A máquina possui uma cabeça que pode mover-se para a esquerda ou para a direita na fita. A cabeça é responsável por ler o símbolo atual e escrever novos símbolos na fita.
+2. `Gravação:` A máquina possui uma "cabeça" que pode mover-se para a esquerda ou para a direita na fita. Ela é responsável por ler o símbolo atual e escrever novos símbolos na fita.
 
-3. `Estado:` A Máquina de Turing opera em um de um conjunto finito de estados. O estado inicial é onde a máquina começa, e ela pode transitar para outros estados conforme a execução do algoritmo.
+3. `Estado:` A Máquina de Turing opera em um conjunto finito de estados. O estado inicial é onde a máquina começa, e ela pode transitar para outros estados conforme a execução do algoritmo.
 ---
 ### Funcionamento
 
