@@ -30,7 +30,7 @@ As instruções com as quais a Máquina irá operar estão em um arquivo `JSON` 
         {"from": 1, "to": 1, "read": "a", "write": "a", "dir": "R"},
         {"from": 1, "to": 1, "read": "B", "write": "B", "dir": "R"},
         {"from": 1, "to": 2, "read": "b", "write": "B", "dir": "L"},
-        // [...]
+        //...
     ]
 }
 ```
