@@ -48,7 +48,7 @@ def personagens_por_casa(personagens):
 
 # Função 2: média de idade dos personagens
 # a função "sum" e "map" são usadas para calcular a soma das idades dos personagens
-# após isso, dividimos pelo número total de personagens para calcular a média
+# após isso, dividi-se pelo número total de personagens para calcular a média
 def media_idade(personagens):
     soma_idades = sum(map(lambda p: p['idade'], personagens))  # calcula a soma das idades
     total_personagens = len(personagens)  # total de personagens
